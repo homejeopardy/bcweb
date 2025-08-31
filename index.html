@@ -8,10 +8,10 @@
     <style>
         /* --- CSS Variables and Global Styles --- */
         :root {
-            --primary-color: #007BFF; /* A vibrant blue for buttons and accents */
-            --secondary-color: #333;   /* Dark gray for text */
-            --background-color: #f4f7f6; /* Light gray for the overall background */
-            --light-color: #fff;      /* White for text on dark backgrounds */
+            --primary-color: #007BFF;
+            --secondary-color: #333;
+            --background-color: #f4f7f6;
+            --light-color: #fff;
             --font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
             --heading-font-family: 'Georgia', serif;
         }
@@ -54,7 +54,7 @@
             border: none;
             font-size: 1rem;
             cursor: pointer;
-            border-radius: 50px; /* Pill shape */
+            border-radius: 50px;
             transition: background-color 0.3s ease;
             text-transform: uppercase;
             font-weight: bold;
@@ -111,6 +111,33 @@
 
         .cta-buttons a {
             margin: 0 0.5rem;
+        }
+        
+        /* --- Navigation --- */
+        nav {
+            display: flex;
+            justify-content: center;
+            padding: 1rem 0;
+            background: #e9ecef;
+            border-bottom: 1px solid #ddd;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 2rem;
+        }
+        
+        nav a {
+            font-weight: bold;
+            color: var(--secondary-color);
+            transition: color 0.3s ease;
+        }
+        
+        nav a:hover {
+            color: var(--primary-color);
         }
 
         /* --- About and Other Content Sections --- */
@@ -211,7 +238,7 @@
             margin-bottom: 1rem;
             border: 1px solid #ccc;
             border-radius: 5px;
-            box-sizing: border-box; /* Ensures padding doesn't affect total width */
+            box-sizing: border-box;
         }
 
         .contact-form textarea {
@@ -296,10 +323,6 @@
                 margin: 0.5rem 0;
             }
 
-            .testimonial-list {
-                grid-template-columns: 1fr;
-            }
-
             .footer-content {
                 flex-direction: column;
                 align-items: center;
@@ -309,6 +332,17 @@
     </style>
 </head>
 <body>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="staff.html">Staff</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
 
     <header class="hero-section">
         <div class="container">
@@ -397,9 +431,11 @@
                 <div class="footer-logo">B-C Web</div>
                 <nav class="footer-nav">
                     <ul>
+                        <li><a href="index.html">Home</a></li>
                         <li><a href="#about">About</a></li>
                         <li><a href="#portfolio">Portfolio</a></li>
                         <li><a href="#services">Services</a></li>
+                        <li><a href="staff.html">Staff</a></li>
                         <li><a href="#contact">Contact</a></li>
                     </ul>
                 </nav>
